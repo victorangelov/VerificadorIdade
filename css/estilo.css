@@ -9,7 +9,7 @@ header{
 section{
     color: white;
     background: white;
-    width: 500px;
+    width: 400px;
     margin: auto;
     padding: 15px;
     border-radius: 10px;
@@ -26,6 +26,6 @@ div#res{
 div{
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
