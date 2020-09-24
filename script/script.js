@@ -1,3 +1,4 @@
+
 function verificar(){
     var data = new Date()
     var ano = data.getFullYear()
@@ -10,8 +11,12 @@ function verificar(){
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img')
+        var img = window.document.createElement('img')
         img.setAttribute('id', 'foto')
+        img.setAttribute('style','border-radius: 50%')
+        img.setAttribute('width','250')
+        img.setAttribute('height','250')
+
         if (fsex[0].checked){
             genero = 'homem'
             if(idade > 0 && idade < 11){
@@ -46,10 +51,5 @@ function verificar(){
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
         res.appendChild(img)
-
-    }
-    
-   
-
-     
+    }  
 }
